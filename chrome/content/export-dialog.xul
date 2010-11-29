@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE prefwindow SYSTEM "chrome://fxport/locale/export-dialog.dtd">
+
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	id="export-dialog"
+	title="&fxport.exportDialog.title;"
+	width="600"
+	height="580"
+	orient="vertical"
+	buttons="accept,cancel"
+	ondialogaccept="fxportExportDialog.onAccept(); return true;"
+	ondialogcancel="fxportExportDialog.onCancel(); return true;">
+	
+	<script type="application/javascript" src="chrome://fxport/content/export-dialog.js"/>
+	
+	<prefpane id="export-dialog-pane"
+		label=""
+		flex="1">
+	
+		<preferences>
+			<preference id="export-bookmarks-pref"
+				name="extensions.fxport.exportBookmarks"
+				type="bool"/>
+			
+			<preference id="export-passwords-pref"
+				name="extensions.fxport.exportPasswords"
+				type="bool"/>
+			
+			<preference id="export-install-perms-pref"
+				name="extensions.fxport.exportInstallPerms"
+				type="bool"/>
+			
+			<preference id="export-popup-perms-pref"
+				name="extensions.fxport.exportPopupPerms"
+				type="bool"/>
+			
+			<preference id="export-cookie-perms-pref"
+				name="extensions.fxport.exportCookiePerms"
+				type="bool"/>
+			
+			<preference id="export-image-perms-pref"
+				name="extensions.fxport.exportImagePerms"
+				type="bool"/>
+			
+			<preference id="export-search-plugins-pref"
+				name="extensions.fxport.exportSearchPlugins"
+				type="bool"/>
+			
+			<preference id="export-prefs-js-pref"
+				name="extensions.fxport.exportPrefsJs"
+				type="bool"/>
+			
+			<preference id="export-user-js-pref"
+				name="extensions.fxport.exportUserJs"
+				type="bool"/>
+			
+			<preference id="export-user-chrome-css-pref"
+				name="extensions.fxport.exportUserChromeCss"
+				type="bool"/>
+			
+			<preference id="export-user-content-css-pref"
+				name="extensions.fxport.exportUserContentCss"
+				type="bool"/>
+		</preferences>
+		
+		<groupbox>
+			<caption label="&fxport.exportDialog.selectExportItems;"/>
+			
+			<checkbox id="export-bookmarks-chkbox"
+				label="&fxport.exportDialog.bookmarks;"
+				preference="export-bookmarks-pref"/>
+			
+			<checkbox id="export-passwords-chkbox"
+				label="&fxport.exportDialog.passwords;"
+				preference="export-passwords-pref"/>
+			
+			<checkbox id="export-install-perms-chkbox"
+				label="&fxport.exportDialog.installPerms;"
+				preference="export-install-perms-pref"/>
+			
+			<checkbox id="export-popup-perms-chkbox"
+				label="&fxport.exportDialog.popupPerms;"
+				preference="export-popup-perms-pref"/>
+			
+			<checkbox id="export-cookie-perms-chkbox"
+				label="&fxport.exportDialog.cookiePerms;"
+				preference="export-cookie-perms-pref"/>
+			
+			<checkbox id="export-image-perms-chkbox"
+				label="&fxport.exportDialog.imagePerms;"
+				preference="export-image-perms-pref"/>
+			
+			<checkbox id="export-search-plugins-chkbox"
+				label="&fxport.exportDialog.searchPlugins;"
+				preference="export-search-plugins-pref"/>
+			
+			<checkbox id="export-prefs-js-chkbox"
+				label="&fxport.exportDialog.prefsJs;"
+				preference="export-prefs-js-pref"/>
+			
+			<checkbox id="export-user-js-chkbox"
+				label="&fxport.exportDialog.userJs;"
+				preference="export-user-js-pref"/>
+			
+			<checkbox id="export-user-chrome-css-chkbox"
+				label="&fxport.exportDialog.userChromeCss;"
+				preference="export-user-chrome-css-pref"/>
+			
+			<checkbox id="export-user-content-css-chkbox"
+				label="&fxport.exportDialog.userContentCss;"
+				preference="export-user-content-css-pref"/>
+		</groupbox>
+	</prefpane>
+</prefwindow>

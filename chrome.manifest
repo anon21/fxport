@@ -1,0 +1,8 @@
+content fxport chrome/content/
+
+locale fxport en-US chrome/locale/en-US/
+locale fxport ja-JP chrome/locale/ja-JP/
+
+skin fxport classic/1.0 chrome/skin/
+
+overlay chrome://browser/content/browser.xul chrome://fxport/content/overlay.xul

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="chrome://fxport/skin/toolbarbutton.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://fxport/locale/overlay.dtd">
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/javascript" src="chrome://fxport/content/fxport.js"/>
+	
+	<commandset>
+		<command id="cmd_exportProfile" oncommand="fxport.exportProfile();"/>
+		<command id="cmd_importProfile" oncommand="fxport.importProfile();"/>
+	</commandset>
+	
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="fxport-button"
+			class="toolbarbutton-1"
+			type="menu"
+			orient="horizontal"
+			label="&fxport.toolbarbutton.label;"
+			tooltiptext="&fxport.toolbarbutton.tooltiptext;">
+			
+			<menupopup>
+				<menuitem label="&fxport.toolbarbutton.menu.exportProfile;"
+					command="cmd_exportProfile"/>
+				
+				<menuitem label="&fxport.toolbarbutton.menu.importProfile;"
+					command="cmd_importProfile"/>
+			</menupopup>
+		</toolbarbutton>
+	</toolbarpalette>
+</overlay>

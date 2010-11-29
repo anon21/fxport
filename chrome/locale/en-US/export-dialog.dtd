@@ -1,0 +1,15 @@
+
+<!ENTITY fxport.exportDialog.title "プロファイルのエクスポート">
+<!ENTITY fxport.exportDialog.selectExportItems "エクスポートする項目の選択">
+
+<!ENTITY fxport.exportDialog.bookmarks "ブックマーク">
+<!ENTITY fxport.exportDialog.passwords "パスワード">
+<!ENTITY fxport.exportDialog.installPerms "アドオンのインストールの許可サイト">
+<!ENTITY fxport.exportDialog.popupPerms "ポップアップの許可サイト">
+<!ENTITY fxport.exportDialog.cookiePerms "Cookieの例外サイト">
+<!ENTITY fxport.exportDialog.imagePerms "画像読み込みの例外サイト">
+<!ENTITY fxport.exportDialog.searchPlugins "検索プラグイン">
+<!ENTITY fxport.exportDialog.prefsJs "prefs.js">
+<!ENTITY fxport.exportDialog.userJs "user.js">
+<!ENTITY fxport.exportDialog.userChromeCss "userChrome.css">
+<!ENTITY fxport.exportDialog.userContentCss "userContent.css">

@@ -1,0 +1,5 @@
+
+<!ENTITY fxport.toolbarbutton.label "fxport">
+<!ENTITY fxport.toolbarbutton.tooltiptext "fxport">
+<!ENTITY fxport.toolbarbutton.menu.exportProfile "プロファイルのエクスポート...">
+<!ENTITY fxport.toolbarbutton.menu.importProfile "プロファイルのインポート...">

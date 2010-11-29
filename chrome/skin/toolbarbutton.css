@@ -1,0 +1,8 @@
+
+#fxport-button {
+	list-style-image: url("chrome://fxport/skin/toolbarbutton.png");
+}
+
+toolbar[iconsize="small"] #fxport-button {
+	list-style-image: url("chrome://fxport/skin/toolbarbutton.png");
+}
